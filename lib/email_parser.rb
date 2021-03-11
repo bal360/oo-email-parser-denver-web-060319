@@ -13,10 +13,10 @@ class EmailAddressParser
   end
 
   def parse
-    emails.split(/[,\s]+/).uniq 
+    # emails.split(/[,\s]+/).uniq 
 
     # NO REGEX SET UP FOR STUDENTS THAT HAVEN'T SEEN REGEX YET
-    # emails.split(", ").join(" ").split(" ").uniq
+    emails.split(", ").join(" ").split(" ").uniq
   end
 
 end
